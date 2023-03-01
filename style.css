@@ -1,0 +1,136 @@
+:root {
+	--cor-fundo : rgb(4, 110, 231);
+	--cor-desenvolvimento : hsl(308, 100%, 90%);
+	--cor-nave : rgb(197, 196, 196);
+	--cor-padding : #464646;
+	--cor-textonav : #000000;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	width: 100%;
+}
+
+html {
+	background-image: url(fundo.jpeg)
+}
+
+/* Inicio do conteúdo da página */
+
+header {
+	width: 940px;
+	padding: 60px;
+	margin: 0 auto;
+	
+}
+
+
+.caixa {
+	width: 940px;
+}
+
+header h1 { 
+	display: inline;
+	}
+
+.logo {
+	width: 20%;
+}
+
+nav li {
+	display: inline-block;
+}
+
+.navheader {
+	display: inline-block;
+	position: relative;
+	bottom: 75px;
+	left: 450px;
+	background-color: var(--cor-nave)
+}
+
+.navheader li {
+	display: block;
+}
+
+.navheader a {
+	font-weight: bold;
+	font-size: 25px;
+	text-decoration: none;
+	color: var(--cor-textonav);
+	;
+}
+
+
+/* menu */
+
+.dp-menu {text-align: center;
+	padding: 10px;	
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: var(--cor-nave);
+	;
+}
+
+.dp-menu li {
+	display: inline-block;
+	padding: 0 150px;
+	
+
+}
+
+.dp-menu li a {
+	text-decoration: none;
+	
+	
+}
+
+/* PRODUTOS  */
+
+#secprodutos {
+	background-color: var(--cor-desenvolvimento);
+}
+
+.produtos {width: 100%;
+text-align: center;}
+
+.produtos li {
+	display: inline-block;
+	padding: 35px 25px;
+	width: 30%;
+	vertical-align: top;
+}
+
+.imagem-produtos {
+	width: 280px;
+	border-radius: 5%;
+
+}
+
+.produtos p {
+	text-align: center;
+}
+
+
+/* Footer */
+
+footer {
+	padding: 100px;
+	text-align: center;
+	background: var(--cor-nave);
+}
+
+@media screen and (max-width: 480px) {
+html, .caixa, .logo, .navheader, .dp-menu , #produtos, .produtos , .imagem-produtos {width: auto;}
+
+.logo {width: 25%;text-align: center;}
+
+nav header {display: block;}
+
+.dp-menu {width: 100%;}
+
+.imagem-produtos {
+	width: 100%;
+}
+
+
+}
